@@ -431,11 +431,12 @@ button:focus {
 /* Home Banner Area css
 ============================================================================================ */
 .home_banner_area {
-  padding-top: 7rem;
+  padding-top: 10rem;
   padding-bottom: 15rem;
-}
-.home_banner_area .banner_inner {
-  width: 100%;
+  z-index: 1;
+  background: url(../img/banner/home-banner1.svg) no-repeat top center;
+  background-position: center;
+  background-size: cover;
 }
 .home_banner_area .banner_inner .home_right_img {
   padding-top: 197px;
@@ -463,12 +464,12 @@ button:focus {
     margin-top: 150px;
   }
 }
-.home_banner_area .banner_inner .banner_content h3 {
+.home_banner_area .banner_content h3 {
   font-size: 40px;
   margin-bottom: 20px;
   position: relative;
 }
-.home_banner_area .banner_inner .banner_content h3:after {
+.home_banner_area .banner_content h3:after {
   content: '';
   width: 410px;
   height: 2px;
@@ -478,31 +479,32 @@ button:focus {
   background: #000000;
 }
 @media (max-width: 575px) {
-  .home_banner_area .banner_inner .banner_content h3:after {
+  .home_banner_area .banner_content h3:after {
     display: none;
   }
 }
-.home_banner_area .banner_inner .banner_content h1 {
+.home_banner_area .banner_content h1 {
   margin-top: 20px;
   font-size: 40px;
   line-height: 60px;
   margin-bottom: 25px;
 }
 @media (max-width: 1024px) {
-  .home_banner_area .banner_inner .banner_content h1 {
+  .home_banner_area .banner_content h1 {
     font-size: 60px;
   }
 }
 @media (max-width: 767px) {
-  .home_banner_area .banner_inner .banner_content h1 {
+  .home_banner_area .banner_content h1 {
     font-size: 50px;
   }
 }
-.home_banner_area .banner_inner .banner_content h5 {
-  font-size: 24px;
+.home_banner_area .banner_content h5 {
+  font-size: 23px;
   margin-bottom: 35px;
 }
-.home_banner_area .banner_inner .banner_content .primary_btn {
+
+.home_banner_area .banner_content .primary_btn {
   margin-right: 20px;
 }
 
@@ -3009,7 +3011,10 @@ h6 {
   padding-top: 6rem;
   position: relative;
 }
-.about_area .main_title h2 {
+.about_area .container {
+  margin-top: 1rem;
+}
+.about_area .container .main_title h2 {
   margin-bottom: 20px;
   margin-top: 0px;
 }
